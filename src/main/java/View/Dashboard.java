@@ -254,7 +254,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel14.setText("Yearly Profit");
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel15.setText("Yearly Sales");
+        jLabel15.setText("Yearly Sale");
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
