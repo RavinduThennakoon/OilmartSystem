@@ -1,0 +1,56 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="Profit" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a4d8f3e3-a259-491d-bba5-1a7c3795c7df">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MYSQL"/>
+	<query language="SQL"><![CDATA[SELECT * FROM tbl_transaction;]]></query>
+	<field name="transaction_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="transaction_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="transaction_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_transaction"/>
+	</field>
+	<field name="date_time" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="date_time"/>
+		<property name="com.jaspersoft.studio.field.label" value="date_time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_transaction"/>
+	</field>
+	<field name="cashier_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="cashier_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="cashier_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_transaction"/>
+	</field>
+	<field name="total_amount" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="total_amount"/>
+		<property name="com.jaspersoft.studio.field.label" value="total_amount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_transaction"/>
+	</field>
+	<field name="discount" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="discount"/>
+		<property name="com.jaspersoft.studio.field.label" value="discount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tbl_transaction"/>
+	</field>
+	<group name="transaction_id">
+		<expression><![CDATA[$F{transaction_id}]]></expression>
+	</group>
+	<group name="date_time">
+		<expression><![CDATA[$F{date_time}]]></expression>
+	</group>
+	<group name="cashier_id">
+		<expression><![CDATA[$F{cashier_id}]]></expression>
+	</group>
+	<group name="total_amount">
+		<expression><![CDATA[$F{total_amount}]]></expression>
+	</group>
+	<group name="discount">
+		<expression><![CDATA[$F{discount}]]></expression>
+	</group>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch"/>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="61" splitType="Stretch"/>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
